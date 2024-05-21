@@ -1,39 +1,75 @@
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 .calculator {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    margin: 50px auto;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .display {
-    background-color: #222;
-    color: #fff;
-    font-size: 2em;
-    padding: 10px;
-    text-align: right;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  button {
-    flex: 1 0 21%;
-    margin: 5px;
-    height: 50px;
-    font-size: 1.5em;
-    cursor: pointer;
-    border: 1px solid #000;
-    border-radius: 5px;
-  }
-  
-  button:active {
-    background-color: #ddd;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+}
+
+.display {
+  min-height: 100px;
+  background-color: #333;
+  color: #fff;
+  font-size: 2.5em;
+  padding: 20px;
+  text-align: right;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  flex: 1 0 20%;
+  margin: 5px;
+  height: 50px;
+  font-size: 1.5em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active,
+button.pressed {
+  background-color: #ccc;
+  transform: scale(0.98);
+}
+
+button:nth-child(4n) {
+  background-color: #ff9500;
+  color: white;
+}
+
+button:nth-child(4n):hover {
+  background-color: #e58900;
+}
+
+button:nth-child(4n):active,
+button.pressed:nth-child(4n) {
+  background-color: #cc7a00;
+}
