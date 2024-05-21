@@ -1,14 +1,13 @@
 import './App.css'
+import Calculator from './Calculator/Calculator';
 
 function App() {
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
-  )
+    <div className="App w-100 h-100">
+      <Calculator />
+    </div>
+  );
 }
 
 export default App
