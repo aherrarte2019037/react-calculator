@@ -4,7 +4,7 @@ import Calculator from './Calculator/Calculator';
 function App() {
 
   return (
-    <div className="App w-100 h-100" style={{ width: '100svw', height : '100svh' }}>
+    <div className="w-100 h-100" style={{ width: '100svw', height : '100svh' }}>
       <img src="https://tinypic.host/images/2024/08/22/Ejercicio-1.png" alt="Ejercicio 1" border="0"/>
       <img src="https://tinypic.host/images/2024/08/22/Ejercicio-2.png" alt="Ejercicio 2" border="0"/>
       <img src="https://tinypic.host/images/2024/08/22/Ejercicio-3.png" alt="Ejercicio 3" border="0"/>
