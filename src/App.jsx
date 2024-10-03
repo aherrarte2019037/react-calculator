@@ -5,6 +5,9 @@ function App() {
 
   return (
     <div className="w-100 h-100" style={{ width: '100svw', height : '100svh', display: 'flex', flexDirection: 'column', gap: '50px' }}>
+      <img src={"/static/images/x.jpeg"} border="0"/>
+      <img src={"/static/images/y.jpeg"} border="0"/>
+      <img src={"/static/images/z.jpeg"} border="0"/>
       <img src={"/static/images/1.jpg"} border="0"/>
       <img src={"/static/images/2.jpg"} border="0"/>
       <img src={"/static/images/3.jpg"} border="0"/>
